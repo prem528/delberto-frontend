@@ -6,20 +6,20 @@ import { Mail, Phone } from 'lucide-react';
 const Footer: React.FC = () => {
   return (
     <footer>
-      <div className="bg-white text-black py-8 sm:py-12 md:py-16 lg:py-20">
+      <div className="bg-white text-black py-6 sm:py-8 md:py-12 lg:py-16">
         <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-24">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12">
-            <div className="sm:col-span-2 lg:col-span-6 space-y-4">
-              <img src={logo} alt="Delberto Logo" className="h-16 mb-4" />
-              <p className="mb-4 text-black font-medium">Build, Launch, Grow with Delberto</p>
-              <p className="whitespace-nowrap font-medium"><strong>Hours:</strong> Monday - Friday 8:30am - 4:45pm IST</p>
-              <div className="mt-4">
-                <p className="flex items-center font-semibold mb-2">
-                <Phone className="mr-2" size={20} />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-6 lg:gap-8">
+            <div className="sm:col-span-2 lg:col-span-6 space-y-3 sm:space-y-4">
+              <img src={logo} alt="Delberto Logo" className="h-12 sm:h-16 mb-2 sm:mb-4" />
+              <p className="mb-2 sm:mb-4 text-black text-sm sm:text-base font-medium">Build, Launch, Grow with Delberto</p>
+              <p className="whitespace-nowrap text-sm sm:text-base font-medium"><strong>Hours:</strong> Mon-Fri 8:30am-4:45pm IST</p>
+              <div className="mt-2 sm:mt-4">
+                <p className="flex items-center font-semibold mb-1 sm:mb-2 text-sm sm:text-base">
+                  <Phone className="mr-2" size={16} />
                   <span>+91 8368014479</span>
                 </p>
-                <p className="flex items-center font-semibold">
-                  <Mail className="mr-2" size={20} />
+                <p className="flex items-center font-semibold text-sm sm:text-base">
+                  <Mail className="mr-2" size={16} />
                   <a href="mailto:info@example.com">info@example.com</a>
                 </p>
               </div>

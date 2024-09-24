@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const ProductFeatures: React.FC = () => {
   const features = [
     {
@@ -100,15 +101,15 @@ const ProductFeatures: React.FC = () => {
   ];
 
   return (
-    <section className="py-2 bg-gray-100">
-      <div className="container mx-auto px-24">
-        <h2 className="text-4xl font-bold text-blue-900 text-center mb-12">Products Features</h2>
+    <section className="py-2 sm:py-4 md:py-6 lg:py-8 bg-gray-100">
+      <div className="container mx-auto px-4 sm:px-8 md:px-16 lg:px-24">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-900 text-center mb-6 sm:mb-8 md:mb-10 lg:mb-12">Products Features</h2>
         <div className="overflow-x-auto">
           <table className="w-full bg-white">
             <thead>
               <tr>
                 {features.map(({ product }, index) => (
-                  <th key={product} className={`bg-[#3281bd] text-white p-3 text-center  ${index !== 0 ? 'border-l border-white' : ''}`}>
+                  <th key={product} className={`bg-[#3281bd] text-white p-2 sm:p-3 text-center text-xs sm:text-sm md:text-base ${index !== 0 ? 'border-l border-white' : ''}`}>
                     {product}
                   </th>
                 ))}
@@ -120,7 +121,7 @@ const ProductFeatures: React.FC = () => {
                   {features.map(({ product, features }, columnIndex) => (
                     <td 
                       key={`${product}-${rowIndex}`} 
-                      className={`p-1 bg-[#e6f3ff] ${columnIndex !== 0 ? 'border-l border-black' : ''}`}
+                      className={`p-1 sm:p-2 bg-[#e6f3ff] text-xs sm:text-sm md:text-base ${columnIndex !== 0 ? 'border-l border-black' : ''}`}
                     >
                       <div className="h-full w-full flex items-center justify-center hover:scale-105 hover:shadow-md transition-all duration-300 ease-in-out">
                         {features[rowIndex] || ''}
