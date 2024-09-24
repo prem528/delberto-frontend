@@ -6,10 +6,10 @@ import { Mail, Phone } from 'lucide-react';
 const Footer: React.FC = () => {
   return (
     <footer>
-      <div className="bg-white text-black py-20">
-        <div className="container mx-auto px-24">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12">
-            <div className="md:col-span-2 lg:col-span-6 space-y-4">
+      <div className="bg-white text-black py-8 sm:py-12 md:py-16 lg:py-20">
+        <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-24">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12">
+            <div className="sm:col-span-2 lg:col-span-6 space-y-4">
               <img src={logo} alt="Delberto Logo" className="h-16 mb-4" />
               <p className="mb-4 text-black font-medium">Build, Launch, Grow with Delberto</p>
               <p className="whitespace-nowrap font-medium"><strong>Hours:</strong> Monday - Friday 8:30am - 4:45pm IST</p>
