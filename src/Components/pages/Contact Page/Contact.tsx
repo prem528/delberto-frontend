@@ -5,7 +5,7 @@ import ContactInfo from './ContactInfo';
 const Contact: React.FC = () => {
   return (
     <div className="bg-white">
-      <main className="pt-8 sm:pt-10 md:pt-12 lg:pt-14 pb-8 sm:pb-10 md:pb-12 lg:pb-16">
+      <main className="pt-28 sm:pt-32 md:pt-36 lg:pt-32 pb-8 sm:pb-10 md:pb-12 lg:pb-16">
         <section id="contact" className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-24">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold text-center mb-8 sm:mb-10 md:mb-12">Contact</h1>
           

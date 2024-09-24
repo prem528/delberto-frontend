@@ -2,8 +2,8 @@ import './App.css'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Header from './Components/Header'
-import AboutPage from './Components/pages/Aboutpages/AboutPage';
-import Contact from './Components/pages/ContactPage/Contact';
+import AboutPage from './Components/pages/About Pages/AboutPage';
+import Contact from './Components/pages/Contact Page/Contact';
 import Hero from './Components/Hero'
 import About from './Components/About'
 import Services from './Components/Services'
@@ -15,6 +15,7 @@ import Testimonials from './Components/Testimonials'
 import PaymentMethods from './Components/PaymentMethods'
 import CallToAction from './Components/CallToAction'
 import Footer from './Components/Footer'
+import Testimonial from './Components/pages/Testimonial Page/Testimonial';
 
 function App() {
   return (
@@ -37,7 +38,9 @@ function App() {
                 <CallToAction />
               </>
             } />
+
             <Route path="/about" element={<AboutPage />} />
+            <Route path="/testimonial" element={<Testimonial />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>

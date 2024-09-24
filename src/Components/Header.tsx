@@ -22,7 +22,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md transition-all duration-300">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white  transition-all duration-300">
       <div
         className={`bg-[#4897d4] text-white transition-all duration-300 ${
           isScrolled ? 'h-0 opacity-0 overflow-hidden' : 'h-auto opacity-100'
