@@ -15,7 +15,7 @@ const PartnersSection: React.FC = () => {
     if (!scrollContainer) return;
 
     const scrollWidth = scrollContainer.scrollWidth;
-    const containerWidth = scrollContainer.clientWidth;
+     
     let scrollPosition = 0;
 
     const scroll = () => {
