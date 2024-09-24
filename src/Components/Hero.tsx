@@ -4,7 +4,7 @@ import carousel from '../assets/img/carousel.png';
 
 const Hero: React.FC = () => {
   return (
-    <section className="mt-4 sm:mt-6 md:mt-8 pt-8 sm:pt-10 md:pt-12 pb-8 sm:pb-10 md:pb-12 bg-[#5ca7e1]">
+    <section className="mt-16 sm:mt-20 md:mt-24 lg:mt-10 pt-8 sm:pt-10 md:pt-12 lg:pt-16 pb-8 sm:pb-10 md:pb-12 lg:pb-16 bg-[#5ca7e1]">
       <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-24">
         <div className="flex flex-col lg:flex-row items-center -mx-2">
           <div className="w-full lg:w-1/2 px-2 mb-6 lg:mb-0">
