@@ -45,7 +45,7 @@ const Header: React.FC = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div className="container mx-auto px-4 lg:px-24 py-4 flex justify-between items-center">
         <div className="flex items-center">
           <button
             aria-label="Toggle mobile menu"
