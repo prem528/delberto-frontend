@@ -1,4 +1,7 @@
 import React from 'react';
+import pin from '../../../assets/img/pin.png';
+import naveen from '../../../assets/img/naveen.png';
+
 
 interface TestimonialSectionProps {
   quote: string;
@@ -7,26 +10,30 @@ interface TestimonialSectionProps {
   imageSrc: string;
 }
 
-const TestimonialSection: React.FC<TestimonialSectionProps> = ({ quote, name, title, imageSrc }) => {
+const TestimonialSection: React.FC<TestimonialSectionProps> = ({ quote, name, title }) => {
   return (
-    <section id="about" className="test-pin section test" style={{ padding: 0 }}>
-      <div className="container" data-aos="fade-up">
-        <div className="row gx-0 justify-content-center">
-          <div className="col-lg-8 d-flex flex-column" data-aos="fade-up" data-aos-delay="200">
-            <div className="content ps-4">
-              <img src="/placeholder.svg?height=50&width=50" className="img-fluid" alt="Pin" />
-              <p>{quote}</p>
-              <div className="text-center text-lg-start">
-                <div className="abt icon-box">
-                  <img src={imageSrc} className="img-fluid" alt={name} />
-                  <div>
-                    <h4>{name}</h4>
-                    <h6>{title}</h6>
-                  </div>
+    <section className="relative" style={{ marginTop: '-10rem' }}>
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+        <div className="flex flex-col md:flex-row mx-4 lg:mx-8 bg-blue-400 rounded-lg overflow-hidden">
+          {/* Left half - Testimonial content */}
+          <div className="w-full md:w-1/2 mb-8 md:mb-0 p-8">
+            <div className="flex flex-col items-start mb-6">
+              <img src={pin} className="mb-4" alt="Pin" />
+              <p className="text-left text-white">{quote}</p>
+            </div>
+            <div className="flex items-center justify-left">
+              <div className="flex items-center space-x-4">
+                <img src={naveen} className="w-16 h-16 rounded-full" alt={name} />
+                <div>
+                  <h4 className="font-semibold text-white">{name}</h4>
+                  <h6 className="text-sm text-white">{title}</h6>
                 </div>
               </div>
             </div>
           </div>
+          
+          {/* Right half - Empty space */}
+          <div className="w-full md:w-1/2"></div>
         </div>
       </div>
     </section>
@@ -36,7 +43,8 @@ const TestimonialSection: React.FC<TestimonialSectionProps> = ({ quote, name, ti
 export default function Component() {
   return (
     <TestimonialSection
-      quote="Having an all-in-one solution, compared to siloed info, ensures teams can better understand action OKRs and work transparently across the business."
+      quote="Having an all-in-one solution, compared to siloed info, ensures teams can better understand action OKRs 
+      and work transparently across the business."
       name="Naveen Gavini"
       title="SVP of Products at Pinterest"
       imageSrc="/placeholder.svg?height=100&width=100"

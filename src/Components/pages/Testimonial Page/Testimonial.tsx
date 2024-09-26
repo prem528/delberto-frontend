@@ -8,12 +8,14 @@ import SliderSection from './SliderSection';
  
 const Testimonial: React.FC = () => {
   return (
-    <div>
-      <PageTitle  />
+    <div className="flex flex-col min-h-screen">
+        <main className="flex-grow pt-40">
+      <PageTitle />
       <TestimonialSection/>
       <FeaturesSection/>
       <LeadersSection />
       <SliderSection />
+      </main>
     </div>
   );
 };
