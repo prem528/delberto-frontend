@@ -93,7 +93,7 @@ const Header: React.FC = () => {
               </ul>
             )}
           </li>
-          <li><a href="/testimonial" className="font-sans text-lg text-gray-800 hover:text-blue-600 block">Testimonial</a></li>
+          <li><Link to="/testimonial" className="font-sans text-lg text-gray-800 hover:text-blue-600 block">Testimonial</Link></li>
           <li><Link to="/contact" className="font-sans text-lg text-gray-800 hover:text-blue-600 block">Contact</Link></li>
         </ul>
       </nav>
