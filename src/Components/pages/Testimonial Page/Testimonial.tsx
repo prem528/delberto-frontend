@@ -4,6 +4,7 @@ import TestimonialSection from './TestimonialSection';
 import FeaturesSection from './FeaturesSection';
 import LeadersSection from './LeadersSection';
 import SliderSection from './SliderSection';
+import CallToAction from '../../CallToAction';
 
  
 const Testimonial: React.FC = () => {
@@ -15,6 +16,7 @@ const Testimonial: React.FC = () => {
       <FeaturesSection/>
       <LeadersSection />
       <SliderSection />
+      <CallToAction/>
       </main>
     </div>
   );
