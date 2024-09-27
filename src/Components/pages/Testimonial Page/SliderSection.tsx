@@ -20,7 +20,7 @@ const Testimonial: React.FC<TestimonialProps> = ({ title, description, imageSrc 
         <div className="p-6 w-1/2">
           <h4 className="text-lg font-bold text-blue-900 mb-2">{title}</h4>
           <p className="text-gray-600 font-semibold mb-4">{description}</p>
-          <a href="#" className="inline-block bg-white text-black px-4 py-2 rounded-full border-2 hover:bg-blue-900 hover:text-white sm:px-2">
+          <a href="#" className="inline-block bg-white text-black px-4 py-2 rounded-lg border-2 hover:bg-blue-900 hover:text-white sm:px-2">
               Read Case Study
           </a>
         </div>
