@@ -136,7 +136,7 @@ const LeadersSection: React.FC = () => {
   };
 
   return (
-    <section className="py-12 px-4 sm:px-6 md:px-8 lg:px-24 bg-gray-100">
+    <section className="py-12 px-4 sm:px-6 md:px-8 lg:px-24 bg-white">
       <div className="container mx-auto">
         <div className="text-center mb-12" data-aos="fade-up">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-900">

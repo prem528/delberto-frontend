@@ -16,11 +16,11 @@ interface TestimonialProps {
 const Testimonial: React.FC<TestimonialProps> = ({ title, description, imageSrc }) => {
   return (
     <div className="px-4">
-      <div className="bg-white rounded-lg overflow-hidden flex">
+      <div className="bg-gray-100 rounded-lg overflow-hidden flex">
         <div className="p-6 w-1/2">
           <h4 className="text-lg font-bold text-blue-900 mb-2">{title}</h4>
           <p className="text-gray-600 font-semibold mb-4">{description}</p>
-          <a href="#" className="inline-block bg-white text-black px-2 py-2 rounded-full border-2 hover:bg-blue-900 hover:text-white">
+          <a href="#" className="inline-block bg-white text-black px-4 py-2 rounded-full border-2 hover:bg-blue-900 hover:text-white sm:px-2">
               Read Case Study
           </a>
         </div>
@@ -117,7 +117,7 @@ export default function TestimonialSlider() {
   };
 
   return (
-    <section className="py-12 px-4 sm:px-6 md:px-8 lg:px-24 bg-gray-100">
+    <section className="py-12 px-4 sm:px-6 md:px-8 lg:px-24 bg-white">
       <div className="container mx-auto">
         <div className="mb-12 text-center">
           <h2 className="text-3xl font-bold text-blue-900 mb-4">Our Customers Love Us</h2>

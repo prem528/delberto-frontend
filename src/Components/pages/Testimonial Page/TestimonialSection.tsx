@@ -12,7 +12,7 @@ interface TestimonialSectionProps {
 
 const TestimonialSection: React.FC<TestimonialSectionProps> = ({ quote, name, title }) => {
   return (
-    <section className="relative" style={{ marginTop: '-10rem' }}>
+    <section className="relative " style={{ marginTop: '-10rem' }}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
         <div className="flex flex-col md:flex-row mx-4 lg:mx-8 bg-blue-400 rounded-lg overflow-hidden">
           {/* Left half - Testimonial content */}

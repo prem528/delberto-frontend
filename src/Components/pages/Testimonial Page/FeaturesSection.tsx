@@ -13,7 +13,7 @@ const Testimonial: React.FC<TestimonialProps> = ({ quote, author, avatarUrl }) =
   const paragraphs = quote ? quote.split('\n\n') : [];
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-100 p-4 sm:p-6 md:p-8">
+    <div className="flex justify-center items-center min-h-screen bg-white p-4 sm:p-6 md:p-8">
       <div className="flex flex-col lg:flex-row max-w-6xl w-full">
         <div className="relative w-full lg:w-2/3 p-6 sm:p-8 bg-white rounded-3xl border-blue-200 border-4 transition-all duration-300 hover:shadow-[0_0_15px_rgba(59,130,246,0.5)] hover:scale-105 transform mb-6 lg:mb-0">
           <blockquote className="text-base sm:text-lg md:text-xl font-serif text-gray-800">
