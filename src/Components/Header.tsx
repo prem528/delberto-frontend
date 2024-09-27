@@ -72,11 +72,14 @@ const Header: React.FC = () => {
 
       <nav className={`container mx-auto px-4 py-4 ${isMobileMenuOpen ? 'block' : 'hidden sm:block'}`}>
         <ul className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
-          <li><Link to="/" className="font-sans text-lg text-gray-800 hover:text-blue-600 block">Home</Link></li>
-          <li><Link to="/about" className="font-sans text-lg text-gray-800 hover:text-blue-600 block">About</Link></li>
+          <li><Link to="/" className="font-sans text-lg text-gray-800 hover:text-blue-600 block" onClick={toggleMobileMenu}>Home</Link></li>
+          <li><Link to="/about" className="font-sans text-lg text-gray-800 hover:text-blue-600 block" onClick={toggleMobileMenu}>About</Link></li>
           <li className="relative">
             <button 
-              onClick={() => setIsProductDropdownOpen(!isProductDropdownOpen)}
+              onClick={() => {
+                setIsProductDropdownOpen(!isProductDropdownOpen);
+                toggleMobileMenu(); // Close mobile menu when clicking Products
+              }}
               className="font-sans text-lg text-gray-800 hover:text-blue-600 flex items-center justify-between w-full sm:w-auto"
               aria-expanded={isProductDropdownOpen}
               aria-haspopup="true"
@@ -86,15 +89,15 @@ const Header: React.FC = () => {
             </button>
             {isProductDropdownOpen && (
               <ul className="mt-2 w-full sm:w-48 bg-white shadow-lg rounded-md py-2 sm:absolute sm:left-0">
-                <li><a href="/tailorfy" className="block px-4 py-2 text-gray-800 hover:bg-blue-100">Tailorfy</a></li>
-                <li><a href="/bespokify" className="block px-4 py-2 text-gray-800 hover:bg-blue-100">Bespokify</a></li>
-                <li><a href="/webify" className="block px-4 py-2 text-gray-800 hover:bg-blue-100">Webify</a></li>
-                <li><a href="/suppokify" className="block px-4 py-2 text-gray-800 hover:bg-blue-100">Suppokify</a></li>
+                <li><Link to="/tailorfy" className="block px-4 py-2 text-gray-800 hover:bg-blue-100" onClick={toggleMobileMenu}>Tailorfy</Link></li>
+                <li><Link to="/bespokify" className="block px-4 py-2 text-gray-800 hover:bg-blue-100" onClick={toggleMobileMenu}>Bespokify</Link></li>
+                <li><Link to="/webify" className="block px-4 py-2 text-gray-800 hover:bg-blue-100" onClick={toggleMobileMenu}>Webify</Link></li>
+                <li><Link to="/suppokify" className="block px-4 py-2 text-gray-800 hover:bg-blue-100" onClick={toggleMobileMenu}>Suppokify</Link></li>
               </ul>
             )}
           </li>
-          <li><Link to="/testimonial" className="font-sans text-lg text-gray-800 hover:text-blue-600 block">Testimonial</Link></li>
-          <li><Link to="/contact" className="font-sans text-lg text-gray-800 hover:text-blue-600 block">Contact</Link></li>
+          <li><Link to="/testimonial" className="font-sans text-lg text-gray-800 hover:text-blue-600 block" onClick={toggleMobileMenu}>Testimonial</Link></li>
+          <li><Link to="/contact" className="font-sans text-lg text-gray-800 hover:text-blue-600 block" onClick={toggleMobileMenu}>Contact</Link></li>
         </ul>
       </nav>
     </header>
