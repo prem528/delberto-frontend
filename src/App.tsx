@@ -16,6 +16,7 @@ import PaymentMethods from './Components/PaymentMethods'
 import CallToAction from './Components/CallToAction'
 import Footer from './Components/Footer'
 import Testimonial from './Components/pages/Testimonial Page/Testimonial';
+import Tailorfy from './Components/pages/Product Page/Tailorfy Page/Tailorfy';
 
 function App() {
   return (
@@ -42,6 +43,8 @@ function App() {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/testimonial" element={<Testimonial />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/tailorfy" element={<Tailorfy />} />
+
           </Routes>
         </main>
         <Footer/>
