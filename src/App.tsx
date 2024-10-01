@@ -17,6 +17,7 @@ import CallToAction from './Components/CallToAction'
 import Footer from './Components/Footer'
 import Testimonial from './Components/pages/Testimonial Page/Testimonial';
 import Tailorfy from './Components/pages/Product Page/Tailorfy Page/Tailorfy';
+import Bespokify from './Components/pages/Product Page/Bespokify Page/Bespokify';
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
             <Route path="/testimonial" element={<Testimonial />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/tailorfy" element={<Tailorfy />} />
+            <Route path="/bespokify" element={<Bespokify />} />
 
           </Routes>
         </main>

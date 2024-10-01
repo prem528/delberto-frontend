@@ -3,12 +3,17 @@ import { Linkedin } from 'lucide-react';
 import prateek from '../../../assets/img/prateek.jpg'
 import Shammi from '../../../assets/img/SHAMMI-MOZA.webp'
 import Pragya  from '../../../assets/img/PragyaSingh.jpg'
+import team from '../../../assets/img/team.png'
 
 const TeamSection: React.FC = () => {
   return (
     <section className="py-12 bg-muted">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-8">Our Team</h2>
+        <div className='flex justify-center'>
+          <img src={team} alt='team' className="w-full h-auto max-w-screen-lg" />
+        </div>
+        
         <div className="flex flex-wrap justify-center gap-8">
           {[
             { name: "Prateek Ojha", image: prateek, linkedin: "https://www.linkedin.com/in/prateek-ojha-48893143" },

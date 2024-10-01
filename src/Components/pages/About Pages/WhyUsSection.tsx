@@ -26,10 +26,10 @@ const WhyUsSection: React.FC = () => {
             }
           ].map((item, index) => (
             <div key={index} className="bg-white rounded-lg p-4 sm:p-6 h-full flex flex-col transition-all duration-300 hover:shadow-[0_0_15px_rgba(59,130,246,0.5)]">
-              <h3 className="text-xl font-bold mb-4">{item.title}</h3>
+              <h3 className="text-xl text-blue-900 font-bold mb-4">{item.title}</h3>
               <p className="mb-4">{item.description}</p>
               <button className="text-primary flex items-center">
-                Read More <ArrowRight className="w-4 h-4 ml-2" />
+                Read More <ArrowRight />
               </button>
             </div>
           ))}
