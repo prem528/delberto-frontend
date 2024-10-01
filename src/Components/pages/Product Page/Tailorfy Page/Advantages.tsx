@@ -12,14 +12,14 @@ const Advantages:React.FC = () => {
         { title: "Tailored Packaging", description: "Enhance the customer experience with custom pouches and poly mailers" },
       ]
   return (
-    <section className="bg-blue-600 py-20 text-white">
+    <section className="bg-blue-600 py-10 text-white">
     <div className="container mx-auto px-24">
       <h2 className="text-3xl font-bold mb-10 text-center">Advantages of Partnering with Tailorfy</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 ">
         {advantages.map((advantage, index) => (
           <div key={index} className="bg-blue-700 p-6 rounded-lg border-2 hover:bg-white hover:text-black transition-all duration-500 hover:scale-105 sm:hover:scale-110 ">
-            <h4 className="text-xl font-semibold mb-2">{advantage.title}</h4>
-            <p>{advantage.description}</p>
+            <h4 className="text-xl font-semibold text-center mb-6">{advantage.title}</h4>
+            <p className='text-center'>{advantage.description}</p>
           </div>
         ))}
       </div>

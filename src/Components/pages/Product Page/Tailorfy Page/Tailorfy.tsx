@@ -5,6 +5,7 @@ import Advantages from './Advantages'
 import Features from './Features'
 import Steps from './Steps'
 import Portfolio from './Portfolio'
+import CallToAction from '../../../CallToAction'
 
 const Tailorfy: React.FC  = () => {
   return (
@@ -16,6 +17,7 @@ const Tailorfy: React.FC  = () => {
             <Features />
             <Steps />
             <Portfolio />
+            <CallToAction/>
         </main>
     </div>
   )
