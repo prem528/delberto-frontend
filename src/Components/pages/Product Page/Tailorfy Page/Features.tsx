@@ -17,7 +17,7 @@ const Features: React.FC = () => {
 
   return (
     <section className="py-20">
-      <div className="container mx-auto px-24 md:px-32">
+      <div className="container mx-auto px-10 md:px-32">
         <h2 className="text-3xl font-bold mb-10 text-center text-blue-900">Why Choose Tailorfy</h2>
         <p className="text-center mb-16 font-medium text-lg max-w-3xl mx-auto">
           Start your business with no upfront inventory costs. We manage product delivery, ensure direct profit transfers, and offer a quick setup in just 15 minutes. Operate with no financial risk and benefit from easy return options.
