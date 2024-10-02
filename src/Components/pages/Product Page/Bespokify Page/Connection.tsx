@@ -1,4 +1,4 @@
-import  { useEffect, useRef, useState } from 'react';
+import  { useEffect, useRef, } from 'react';
 import amazon from "../../../../assets/img/amazon.webp";
 import alibaba from "../../../../assets/img/alibaba.png";
 import alibaba2 from "../../../../assets/img/alibaba2.png";
@@ -10,33 +10,27 @@ import woocom from "../../../../assets/img/woocommerce.webp";
 export default function Connection() {
   const storeLogos = [amazon, alibaba, alibaba2, ebay, shopify, wix, woocom];
   const scrollRef = useRef<HTMLDivElement>(null);
-  const [isHovered, setIsHovered] = useState(false);
 
   useEffect(() => {
     const scrollContainer = scrollRef.current;
     if (!scrollContainer) return;
 
     const scrollWidth = scrollContainer.scrollWidth;
-    let scrollPosition = 0;
-    let lastTimestamp = 0;
 
-    const scroll = (timestamp: number) => {
-      if (!isHovered) {
-        const delta = timestamp - lastTimestamp;
-        scrollPosition += (delta / 16) *  1; // Adjust speed here
-        if (scrollPosition >= scrollWidth / 2) {
-          scrollPosition -= scrollWidth / 2;
-        }
-        scrollContainer.scrollLeft = scrollPosition;
+    let scrollPosition = 0;
+    const scroll = () => {
+      scrollPosition += 1;
+      if (scrollPosition >= scrollWidth / 2) {
+        scrollPosition = 0;
       }
-      lastTimestamp = timestamp;
+      scrollContainer.scrollLeft = scrollPosition;
       requestAnimationFrame(scroll);
     };
 
     const animationFrame = requestAnimationFrame(scroll);
 
     return () => cancelAnimationFrame(animationFrame);
-  }, [isHovered]);
+  }, []);
 
   return (
     <section className="py-10 bg-blue-400 font-sans">
@@ -61,8 +55,7 @@ export default function Connection() {
         <div 
           className="overflow-hidden px-8" 
           ref={scrollRef}
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
+           
         >
           <div className="flex" style={{ width: `${storeLogos.length * 200}px` }}>
             {[...storeLogos, ...storeLogos].map((logo, index) => (

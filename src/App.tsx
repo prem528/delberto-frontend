@@ -18,6 +18,8 @@ import Footer from './Components/Footer'
 import Testimonial from './Components/pages/Testimonial Page/Testimonial';
 import Tailorfy from './Components/pages/Product Page/Tailorfy Page/Tailorfy';
 import Bespokify from './Components/pages/Product Page/Bespokify Page/Bespokify';
+import Webify from './Components/pages/Product Page/Webify Page/Webify';
+import Suppokify from './Components/pages/Product Page/Suppokify Page/Suppokify';
 
 function App() {
   return (
@@ -46,6 +48,8 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/tailorfy" element={<Tailorfy />} />
             <Route path="/bespokify" element={<Bespokify />} />
+            <Route path="/webify" element={<Webify />} />
+            <Route path="/suppokify" element={<Suppokify />} />
 
           </Routes>
         </main>
