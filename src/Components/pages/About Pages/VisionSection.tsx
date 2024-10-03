@@ -11,7 +11,7 @@ const VisionSection: React.FC = () => {
     <section className="mt-2 py-4 sm:py-6 md:py-8 lg:py-12 pt-8 pb-4 bg-white">
       <div className="container mx-auto px-2 sm:px-4 md:px-6 lg:px-8 xl:px-24">
         <h2 className="text-3xl font-bold text-center text-blue-900 mb-8">Our Vision</h2>
-        <p className="text-justify  mb-12 text-xl mx-auto">
+        <p className=" mb-4 text-lg sm:text-xl text-justify">
           Empower marginalized communities, artisans, crafters, aspiring entrepreneurs, and local businesses in
           Canada with our SaaS-based technology platform. We foster entrepreneurship by connecting suppliers with sellers,
           enhancing visibility, and providing tools for business growth. By supporting diverse entrepreneurs, we drive economic 
