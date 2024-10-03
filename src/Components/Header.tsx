@@ -21,6 +21,15 @@ const Header: React.FC = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  const closeProductDropdown = () => {
+    setIsProductDropdownOpen(false);
+  };
+
+  const handleProductClick = () => {
+    closeProductDropdown();
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white  transition-all duration-300">
       <div
@@ -78,7 +87,7 @@ const Header: React.FC = () => {
             <button 
               onClick={() => {
                 setIsProductDropdownOpen(!isProductDropdownOpen);
-                toggleMobileMenu(); // Close mobile menu when clicking Products
+                  
               }}
               className="font-sans text-lg text-gray-800 hover:text-blue-600 flex items-center justify-between w-full sm:w-auto"
               aria-expanded={isProductDropdownOpen}
@@ -89,10 +98,10 @@ const Header: React.FC = () => {
             </button>
             {isProductDropdownOpen && (
               <ul className="mt-2 w-full sm:w-48 bg-white shadow-lg rounded-md py-2 sm:absolute sm:left-0">
-                <li><Link to="/tailorfy" className="block px-4 py-2 text-gray-800 hover:bg-blue-100" onClick={toggleMobileMenu}>Tailorfy</Link></li>
-                <li><Link to="/bespokify" className="block px-4 py-2 text-gray-800 hover:bg-blue-100" onClick={toggleMobileMenu}>Bespokify</Link></li>
-                <li><Link to="/webify" className="block px-4 py-2 text-gray-800 hover:bg-blue-100" onClick={toggleMobileMenu}>Webify</Link></li>
-                <li><Link to="/suppokify" className="block px-4 py-2 text-gray-800 hover:bg-blue-100" onClick={toggleMobileMenu}>Suppokify</Link></li>
+                <li><Link to="/tailorfy" className="block px-4 py-2 text-gray-800 hover:bg-blue-100" onClick={handleProductClick}>Tailorfy</Link></li>
+                <li><Link to="/bespokify" className="block px-4 py-2 text-gray-800 hover:bg-blue-100" onClick={handleProductClick}>Bespokify</Link></li>
+                <li><Link to="/webify" className="block px-4 py-2 text-gray-800 hover:bg-blue-100" onClick={handleProductClick}>Webify</Link></li>
+                <li><Link to="/suppokify" className="block px-4 py-2 text-gray-800 hover:bg-blue-100" onClick={handleProductClick}>Suppokify</Link></li>
               </ul>
             )}
           </li>
