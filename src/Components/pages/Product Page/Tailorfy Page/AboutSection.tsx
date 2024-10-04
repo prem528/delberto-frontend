@@ -13,8 +13,9 @@ const AboutSection: React.FC = () => {
           <h3 className="text-xl md:text-2xl font-semibold text-blue-800 mb-4"> {/* Adjusted text size for smaller screens */}
             No Upfront Investment Needed
           </h3>
-          <p className="font-medium mb-6 text-sm md:text-base"> {/* Adjusted text size for smaller screens */}
-            Want to start a business with minimal initial investment? Delberto helps you begin without upfront inventory costs. We handle product delivery, cover costs, and disburse profits directly to your account. Launch your business effortlessly in just 15 minutes with Delberto!
+          <p className="font-medium mb-10 text-center text-lg md:text-lg"> {/* Adjusted text size for smaller screens */}
+            Want to start a business with minimal initial investment? Delberto helps you begin without upfront inventory costs.
+             We handle product delivery, cover costs, and disburse profits directly to your account. Launch your business effortlessly in just 15 minutes with Delberto!
           </p>
           <a href="#" className="bg-blue-600 text-white px-4 py-2 rounded-full inline-flex items-center md:px-6 md:py-3"> {/* Adjusted padding for smaller screens */}
             Take my business online Now
