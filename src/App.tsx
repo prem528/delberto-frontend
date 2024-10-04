@@ -20,11 +20,13 @@ import Tailorfy from './Components/pages/Product Page/Tailorfy Page/Tailorfy';
 import Bespokify from './Components/pages/Product Page/Bespokify Page/Bespokify';
 import Webify from './Components/pages/Product Page/Webify Page/Webify';
 import Suppokify from './Components/pages/Product Page/Suppokify Page/Suppokify';
+import ScrollToTop from './Components/ScrollToTop';
 
 function App() {
   return (
     <Router>
       <div className="flex flex-col min-h-screen">
+        <ScrollToTop/>
         <Header />
         <main className="flex-grow pt-[70px] md:pt-[140px]">
           <Routes>

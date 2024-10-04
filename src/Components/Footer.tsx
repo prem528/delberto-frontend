@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../assets/img/logo.png';
 import { Mail, Phone } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 
 const Footer: React.FC = () => {
@@ -28,27 +29,27 @@ const Footer: React.FC = () => {
             <div className="md:col-span-1 lg:col-span-2 space-y-4">
               <h4 className="text-lg font-bold mb-4 text-blue-900">Shop</h4>
               <ul className="space-y-4">
-                <li><a href="#" className="hover:text-gray-300">Home</a></li>
-                <li><a href="#" className="hover:text-gray-300">About us</a></li>
-                <li><a href="#" className="hover:text-gray-300">Services</a></li>
-                <li><a href="#" className="hover:text-gray-300">Terms of service</a></li>
+              <li><Link to="/" className="font-sans text-lg text-gray-800 hover:text-blue-600 block">Home</Link></li>
+              <li><Link to="/about" className="font-sans text-lg text-gray-800 hover:text-blue-600 block">About</Link></li>
+              <li><Link to="/services" className="font-sans text-lg text-gray-800 hover:text-blue-600 block">Services</Link></li>
+              <li><Link to="/terms-of-service" className="font-sans text-lg text-gray-800 hover:text-blue-600 block">Terms of Service</Link></li>
               </ul>
             </div>
             <div className="md:col-span-1 lg:col-span-2 space-y-4">
               <h4 className="text-lg font-bold mb-4 text-blue-900">Products</h4>
               <ul className="space-y-4">
-                <li><a href="/tailorfy" className="hover:text-gray-300">Tailorfy</a></li>
-                <li><a href="/bespokify" className="hover:text-gray-300">Bespokify</a></li>
-                <li><a href="/webify" className="hover:text-gray-300">Webify</a></li>
-                <li><a href="/suppokify" className="hover:text-gray-300">Suppokify</a></li>
+              <li><Link to="/tailorfy" className="font-sans text-lg text-gray-800 hover:bg-blue-100">Tailorfy</Link></li>
+                <li><Link to="/bespokify" className="font-sans text-lg text-gray-800 hover:bg-blue-100" >Bespokify</Link></li>
+                <li><Link to="/webify" className="font-sans text-lg text-gray-800 hover:bg-blue-100" >Webify</Link></li>
+                <li><Link to="/suppokify" className="font-sans text-lg text-gray-800 hover:bg-blue-100">Suppokify</Link></li>
               </ul>
             </div>
             <div className="md:col-span-1 lg:col-span-2 space-y-4">
               <h4 className="text-lg font-bold mb-4 text-blue-900">Support</h4>
               <ul className="space-y-4">
-                <li><a href="#" className="hover:text-gray-300">Contact Us</a></li>
-                <li><a href="/privacy-policy" className="hover:text-gray-300">Privacy Policy</a></li>
-                <li><a href="/terms-conditions" className="hover:text-gray-300">Terms & Conditions</a></li>
+              <li><Link to="/contact" className="font-sans text-lg text-gray-800 hover:text-blue-600 block" >Contact</Link></li>
+                <li><Link to="/privacy-policy" className="font-sans text-lg text-gray-800 hover:text-blue-600 block">Privacy Policy</Link></li>
+                <li><Link to="/terms-conditions" className="font-sans text-lg text-gray-800 hover:text-blue-600 block">Terms & Conditions</Link></li>
               </ul>
             </div>
           </div>

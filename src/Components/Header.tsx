@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Mail, Phone, Search, ShoppingBag, ChevronDown, Menu, X } from 'lucide-react';
 import logo from '../assets/img/logo.png';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Header: React.FC = () => {
   const [isProductDropdownOpen, setIsProductDropdownOpen] = useState<boolean>(false);
@@ -16,6 +16,13 @@ const Header: React.FC = () => {
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const location = useLocation()
+
+useEffect(() => {
+  setIsMobileMenuOpen(false)
+  setIsProductDropdownOpen(false)
+}, [location])
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
