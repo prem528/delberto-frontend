@@ -38,10 +38,10 @@ const Footer: React.FC = () => {
             <div className="md:col-span-1 lg:col-span-2 space-y-4">
               <h4 className="text-lg font-bold mb-4 text-blue-900">Products</h4>
               <ul className="space-y-4">
-              <li><Link to="/tailorfy" className="font-sans text-lg text-gray-800 hover:bg-blue-100">Tailorfy</Link></li>
-                <li><Link to="/bespokify" className="font-sans text-lg text-gray-800 hover:bg-blue-100" >Bespokify</Link></li>
-                <li><Link to="/webify" className="font-sans text-lg text-gray-800 hover:bg-blue-100" >Webify</Link></li>
-                <li><Link to="/suppokify" className="font-sans text-lg text-gray-800 hover:bg-blue-100">Suppokify</Link></li>
+              <li><Link to="/tailorfy" className="font-sans text-lg text-gray-800 hover:text-blue-600">Tailorfy</Link></li>
+                <li><Link to="/bespokify" className="font-sans text-lg text-gray-800 hover:text-blue-600" >Bespokify</Link></li>
+                <li><Link to="/webify" className="font-sans text-lg text-gray-800 hover:text-blue-600" >Webify</Link></li>
+                <li><Link to="/suppokify" className="font-sans text-lg text-gray-800 hover:text-blue-600">Suppokify</Link></li>
               </ul>
             </div>
             <div className="md:col-span-1 lg:col-span-2 space-y-4">
